@@ -1,0 +1,60 @@
+/* ChessBoard.css */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color:#21201f;
+}
+
+
+#chessboard {
+   background:url('D:/chess/public/bg.jpg');
+   display: grid;
+   grid-template-columns:repeat(8,80px);
+   grid-template-rows: repeat(8,80px);
+   border: 2px solid white;
+   height: 640px;
+   width:640px; 
+   margin: auto;
+}
+
+#pawn-promotion{
+  position: absolute;
+  top:0%;
+  bottom:0%;
+  left:0%;
+  right:0%;
+}
+#pawn-promotion.hidden{
+  display:none;
+}
+
+#pawn-promotion #model{
+  position: absolute;
+  top: calc(50% - 150px);
+  left:calc(50% - 320px);
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  height:300px;
+  width:640px;
+  background-color:rgba(0,0,0,0.8);
+}
+#pawn-promotion #model img{
+  height:100px;
+  padding:20px;
+  border-radius:50%;
+}
+#pawn-promotion #model img:hover{
+  background-color:rgba(255,255,255,0.4);
+  cursor:pointer;
+}
+
+
+
+  
+
+
